@@ -139,7 +139,7 @@ static void append_with_alg(char **buffer, size_t buffer_size,
     }
 }
 
-#include "psa_constant_names_generated.c"
+//#include "psa_constant_names_generated.c"
 
 static int psa_snprint_status(char *buffer, size_t buffer_size,
                               psa_status_t status)
@@ -327,3 +327,5 @@ int main(int argc, char *argv[])
         return EXIT_FAILURE;
     }
 }
+
+
