@@ -1,2 +1,13 @@
-﻿  Source.c
+﻿  main.c
+  EncryptionRsa.c
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(46): warning C4013: 'memcpy' undefined; assuming extern returning int
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(101): warning C4013: 'strlen' undefined; assuming extern returning int
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(190): warning C4013: 'mbedtls_sha1_ret' undefined; assuming extern returning int
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(228): warning C4047: 'function' : 'mbedtls_rsa_context *' differs in levels of indirection from 'mbedtls_rsa_context **'
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(228): warning C4024: 'mbedtls_rsa_pkcs1_verify' : different types for formal and actual parameter 1
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(363): warning C4013: 'memcmp' undefined; assuming extern returning int
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(385): warning C4098: 'signature_attestation' : 'void' function returning a value
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(420): warning C4098: 'signature_attestation' : 'void' function returning a value
+c:\users\administrator\onedrive\linuxswap\encryprion\vs\project1\project1\encryptionrsa.c(518): warning C4098: 'rsa_test' : 'void' function returning a value
+  Generating Code...
   Project1.vcxproj -> C:\Users\Administrator\OneDrive\LinuxSwap\Encryprion\Vs\Project1\Debug\Project1.exe
