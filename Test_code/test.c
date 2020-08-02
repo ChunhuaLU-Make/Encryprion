@@ -67,7 +67,7 @@ exit:
 
 }
 
-void encryption_test(char data[16], char key[32])
+int encryption_test(char data[16], char key[32])
 {
     mbedtls_aes_context ctx;
     int ret = 0;
@@ -85,7 +85,7 @@ void encryption_test(char data[16], char key[32])
         return 1;
     }
 
-    ret = bedtls_aes_crypt_ecb(&ctx, 1, data, buf);
+    ret = mbedtls_aes_crypt_ecb(&ctx, 1, data, buf);
     if(ret != 0)
     {
         printf("encryption fail\n");
@@ -103,7 +103,7 @@ void encryption_test(char data[16], char key[32])
 
 }
 
-void decode_test(char data[16], char key[32])
+int decode_test(char data[16], char key[32])
 {
     mbedtls_aes_context ctx;
 
@@ -122,7 +122,7 @@ void decode_test(char data[16], char key[32])
         return 1;
     }
 
-    ret = bedtls_aes_crypt_ecb(&ctx, 0, data, buf);
+    ret = mbedtls_aes_crypt_ecb(&ctx, 0, data, buf);
     if(ret != 0)
     {
         printf("decode fail\n");

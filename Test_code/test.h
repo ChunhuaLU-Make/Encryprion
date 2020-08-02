@@ -28,8 +28,8 @@ int mbedtls_aes_self_test( int verbose );
 
 int mbedtls_aes_check(const char input[16], char output[16], char key[32], uint8_t mode, uint8_t verbose);
 
-void encryption_test(char data[16], char key[32]);
+int encryption_test(char data[16], char key[32]);
 
-void decode_test(char data[16], char key[32]);
+int decode_test(char data[16], char key[32]);
 
 #endif
